@@ -9,7 +9,7 @@ LABEL       author="Michael Parker" maintainer="docker@parkervcp.com"
 
 RUN         apk add --no-cache --update sudo \
             && adduser -D -h /home/container container \
-            && apk add --update tar curl wget xvfb screen
+            && apk add --update tar curl wget xvfb nano
 
 USER        container
 ENV         USER=container HOME=/home/container
