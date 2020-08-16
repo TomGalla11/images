@@ -8,8 +8,8 @@ FROM        python:3-alpine
 LABEL       author="Michael Parker" maintainer="docker@parkervcp.com"
 
 RUN         apk add --no-cache --update sudo \
-            && adduser -D -h /home/container container \
-            && apk add --update tar curl wget xvfb
+            && apk add --update tar curl wget xvfb \
+            && adduser -D -h /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
