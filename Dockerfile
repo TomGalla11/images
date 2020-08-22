@@ -7,7 +7,7 @@ FROM        python:3-alpine
 
 LABEL       author="Michael Parker" maintainer="docker@parkervcp.com"
 
-RUN         apk add --no-cache --update sudo tar curl wget git screen xvfb \
+RUN         apk add --no-cache --update sudo tar curl wget git screen xvfb htop \
             && adduser -D -h /home/container container
 
 USER        container
