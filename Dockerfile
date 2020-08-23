@@ -20,7 +20,7 @@ RUN         pip install --upgrade pip
             # install selenium
 RUN         pip install selenium
 
-RUN         apk add --no-cache --update sudo  tar curl wget git screen xvfb htop \
+RUN         apk add --no-cache --update sudo tar curl wget git screen xvfb htop \
             && adduser -D -h /home/container container
 
 USER        container
