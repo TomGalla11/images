@@ -7,7 +7,7 @@ FROM        python:3-alpine
 
 LABEL       author="Michael Parker" maintainer="docker@parkervcp.com"
 
-RUN         apk add --no-cache --update chromium-chromedriver chromium tar curl wget git screen xvfb htop \
+RUN         apk add --no-cache --update chromium-chromedriver chromium tar curl wget git screen xvfb \
             && adduser -D -h /home/container container
 
 USER        container
